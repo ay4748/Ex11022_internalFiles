@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             OutputStreamWriter oSW = new OutputStreamWriter(fOS);
             BufferedWriter bW = new BufferedWriter(oSW);
 
-            bW.write(eT.getText().toString() + "\n"); // Ensuring each entry is on a new line
+            bW.write(eT.getText().toString());
             bW.close();
             oSW.close();
             fOS.close();
